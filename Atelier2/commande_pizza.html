@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Commande PIZZA</title>
+</head>
+
+<body>
+    <form method="post" action="commande_pizza.html">
+        <h1>Formulaire de Commande de Pizza</h1>
+        <table>
+            <tr>
+                <td><label>Nom du client:</label></td>
+                <td><input type="text" name="nom_text"></td>
+            </tr>
+        </table>
+        <h3> Ingrédients Optionnels:</h3>
+        <input type="checkbox" name="fromage"> Fromage
+        <input type="checkbox" name="pepperoni"> Pepperoni
+        <h3>Taille de la Pizza</h3>
+        <input type="radio" name="petite"> Petite
+        <input type="radio" name="moyenne"> Moyenne
+        <h3>Type de Croute:</h3>
+        <table>
+            <tr>
+                <td><label>Sélectionner le type de croute:</label></td>
+                <td>
+                    <select>
+                        <option value="mince" selected>Mince</option>
+                        <option value="épaisse">Epaisse</option>
+                        <option value="pan">Pan</option>
+                    </select>
+                    <input type="submit" value="Passer la Commande">
+                </td>
+            </tr>
+        </table> <br>
+        <label>N'oublier pas d'ajouter vos préférences pour une pizza délicieuse!</label>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mise en forme formulaire</title>
+    <link rel="stylesheet" type="text/css" href="styleForm.css">
+
+</head>
+
+<body>
+    <form method="get" action="ex3.html">
+        <table>
+            <tr>
+                <td><label for="nom et prenom">Nom et prénom:</label></td>
+                <td> <input class="ma-classe1" type="text" id="nom et prenom" name="nom et prenom"></td>
+            </tr><br>
+            <tr>
+                <td><label for="adresse">Adresse:</label></td>
+                <td><textarea class="ma-classe1" name="nom-textarea" rows="2"
+                        placeholder="écrire votre adresse ici..."></textarea></td>
+            </tr> <br>
+            <tr>
+                <td><label for="classe">Classe:</label></td>
+                <td><select class="ma-classe1"  name="liste">
+                        <option value="valeur1">--Choisir une classe--</option>
+                    </select> </td>
+            </tr><br>
+            <tr>
+                <td><label for="option">Option:</label></td>
+                <td><input type="radio" name="option" value="mdw" checked>MDW<br>
+                    <input type="radio" name="option" value="sem">SEM<br>
+                    <input type="radio" name="option" value="rsi">RSI<br>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="ma-classe" type="submit" value="Valider"></td>
+                <td><input class="ma-classe" type="reset" value="Annuler"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--une zone de saisie mono ligne-->
+    <p><input type="text" name="nom-input"></p>
+    <!-- une zone de saise multi-ligne-->
+    <p><textarea name="nom-textarea" rows="3"></textarea></p>
+    <!--un libellé associé a une zone de saisie -->
+    <label for="nom">Nom:</label>
+    <input type="text" name="nom-input">
+    <input type="text" name="nom" id="nom" value="John Wick">
+    <p> <input type=text value=John> </p>
+    <input type="text" value="John Wick">
+    <p><input type='text' value='John Wick'></p>
+    <p><input type="email" name="user_email"></p>
+    <!--password-->
+    <p><input type="password" id="pass" name="password"></p>
+    <!--color-->
+    <p><input type="color" id="head" name="couleur" value="#006600"></p>
+    <!--number-->
+    <input type="number" name="Age" min="10" max="100" step="5">
+    <hr>
+    <!--date-->
+    <input type="date" id="date" value="2023-07-30">
+    <input type="month" id="month" value="2023-12">
+    <input type="week" id="week" value="2023-W01">
+    <input type="time" id="time" value="12:30">
+    <input type="datetime-local" id="time" value="2023-07-30T12:30">
+    <p><input type="url" name="url" placeholder="https://example.com&quot" ; size="40"></p>
+    <!--pattern:attribut pour l'utilisation des expressions régulieres(regex)pour le filtrage(validité de donnée)-->
+    <p><input type="text" pattern="[a-z]{3,5}" /></p>
+    <p><input type="text" pattern="[A-Z][0-9]{3,}" /></p>
+    <style>
+        input:invalid {
+            border: red solid 5px;
+        }
+    </style>
+    <p> <input type="text" pattern="[a-zAA-Z]+[0-9]{4}[A-Z]?" /></p>
+    <p><input type="email" pattern="[a-zA-Z0-9.-_]+@[a-zA-Z]+\.[a-zA-Z]{2,3}" /></p>
+    <input type="url" pattern="http://www\..+\..+" />
+
+
+
+
+
+
+</body>
+
+</html>

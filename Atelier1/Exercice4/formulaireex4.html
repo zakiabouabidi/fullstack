@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Inscription</legend>
+            <fieldset>
+                <legend>Vos données personnelles</legend>
+                <table>
+                    <tr>
+                        <td><label>Nom:</label></td>
+                        <td><input type="text" name="nom-input" placeholder="votre nom" autofocus required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Prénom:</label></td>
+                        <td><input type="text" name="nom-input" placeholder="votre prénom" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Sexe:</label></td>
+                        <td><input type="radio" name="x">Masculin
+                            <input type="radio" name="x">Feminin
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Mot de passe:</label></td>
+                        <td><input type="password" name="nom-input" placeholder="votre pwd" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Date de naissance:</label></td>
+                        <td><input type="date" name="nom-input" placeholder="votre prénom" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Adesse postale:</label></td>
+                        <td><textarea name="nom-textarea" rows="5" placeholder="votre adresse"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label>Code postale:</label></td>
+                        <td><input type="text" name="nom-input" placeholder="Ex:1000" min="1000" max="9999"
+                                maxlength="4" minlength="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Adresse electronique:</label></td>
+                        <td><input type="email" name="nom-input" placeholder="votre mail" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Page personnelle:</label></td>
+                        <td><input type="url" name="nom-input" placeholder="votre adresse url"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Telephone portable:</label></td>
+                        <td><input type="text" name="nom-input" placeholder="+21600000000" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Couleur préférée:</label></td>
+                        <td><input type="color" id="head" name="couleur" value="#000000"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Photo personnelle:</label></td>
+                        <td><input type="file" id="ph">
+                            Aucun fichier choisi</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Vos données académiques</legend>
+                <table>
+                    <tr>
+                        <td><label>Niveau universitaire:</label></td>
+                        <td>
+                            <select name="liste">
+                                <option value="1ère année" selected>1ère année</option>
+                                <option value="2ème année">2ème année</option>
+                                <option value="3 ème année">3 ème année</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Niveau en html:</label></td>
+                        <td><input type="number" name="nom-input" min="0" max="20"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Connaissance web:</label></td>
+                        <td>
+                            <input type="checkbox" name="HTML">HTML
+                            <input type="checkbox" name="CSS">CSS
+                            <input type="checkbox" name="JAVA SCRIPT">JAVASCRIPT
+                            <input type="checkbox" name="XML">XML
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Réinitialiser">
+        </fieldset>
+    </form>
+</body>
+
+</html>

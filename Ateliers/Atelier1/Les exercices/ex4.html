@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucle for simple</title>
+</head>
+<body>
+    <script language="JavaScript">
+        document.write("les nombres premiers entre 0 et 100 sont <br>");
+        for (let num = 2; num <= 100; num++) {
+            let trouve = false;
+            for (div = 2; div < num / 2 && !trouve; div++) {
+                if (num % div == 0)
+                    trouve = true;
+            }
+            if (trouve == false)
+                document.write(num, ",");
+        }
+    </script>
+</body>
+
+</html>

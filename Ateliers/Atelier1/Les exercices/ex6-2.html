@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+    <script language="javascript">
+        function modif() {
+            let c=prompt("Donner la couleur du fond");
+            document.bgColor = "c";
+        }
+    </script>
+</head>
+</head>
+<body>
+    <h1>Enquète de Satisfaction-Cours HTML</h1>
+    <form method="get" action="traitement.html">
+        <table border="4">
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Informations Personnelles</legend>
+                        <table>
+                            <tr>
+                                <td><label>Nom:</label></td>
+                                <td><input type="text" name="nom" id="nom"></td>
+                                <td><label>Prenom:</label></td>
+                                <td><input type="text" name="Prenom" id="Prenom"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Email:</label></td>
+                                <td><input type="text" name="email" id="email"></td>
+                                <td><label>Tél.:</label></td>
+                                <td><input type="tel" name="tel" id="tel"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Expérience du Cours HTML</legend>
+                        <label>Comment évaluer-vous notre cours HTML?</label><br>
+                        <input type="radio" name="evaluation" value="excellent">Excellent<br>
+                        <input type="radio" name="evaluation" value="bien">Bien<br>
+                        <input type="radio" name="evaluation" value="passable">passable<br>
+                        <input type="radio" name="evaluation" value="mauvais">mauvais<br>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Difficultés</legend>
+                        <label>Quelles parties du cours HTML ont été les plus dificiles pour vous?</label><br>
+                        <textarea name="nom-textarea" rows="3"></textarea>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Améliorations</legend>
+                        <label>Comment pouvons-nous améliorer notre cours HTML?</label><br>
+                        <textarea name="nom-textarea" rows="3"></textarea>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Ressources Supplémentaires</legend>
+                        <label>Cocher les ressources supplémentaires que vous aimeriez voir dans le cours:</label><br>
+                        <input type="checkbox" name="exemples de code" value="exemples de code">Exemples de code<br>
+                        <input type="checkbox" name="tutoriels vidéo" value="tutoriels vidéo">Tutoriels vidéo<br>
+                        <input type="checkbox" name="exercices pratiques" value="exercices pratiques">Exercices
+                        pratiques<br>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Contact</legend>
+                        <label>Votre appréciation globale:</label><br>
+                        <input type="range" id="r" value="50" name="volume"><br>
+                        <label>Si vous avez des questions supplémentaires,veuillez nous contacter:</label><br>
+                        Email: <a href="mailto:assa_anis@yahoo.fr">assa_anis@yahoo.fr</a> & <a
+                            href="mailto:yessine.zekri.isetjb@gmail.com">yessine.zekri.isetjb@gmail.comr</a>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="modifier" OnClick="modif()">
+    </form>
+</body>
+</html>

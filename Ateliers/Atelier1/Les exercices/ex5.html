@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+</head>
+
+<body>
+    <script>
+        function multiplication() {
+            document.write("<table border='2'>");
+            document.write("<tr><td>X</td>");
+            for (let i = 0; i <= 9; i++) {
+                document.write("<td>", i, "</td>");
+            }
+            document.write("<tr>");
+            for (let i = 0; i <= 9; i++) {
+                document.write("<td>", i, "</td>");
+                for (let j = 0; j <= 9; j++) {
+                    document.write("<td>", i * j, "</td>");
+                } document.write("</tr>");
+            }
+            document.write("</table>");
+        }
+        multiplication();
+    </script>
+</body>
+
+</html>
